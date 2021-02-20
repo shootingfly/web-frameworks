@@ -68,7 +68,7 @@ make -f ${FRAMEWORK}/.Makefile collect
 
 :warning: You need to be on the project main directory :warning:
 
-## Results (2021-02-18)
+## Results (2021-02-20)
 
 
 
@@ -78,7 +78,7 @@ make -f ${FRAMEWORK}/.Makefile collect
    <li>CPU : 8 Cores (AMD FX-8320E Eight-Core Processor)</li>
    <li>RAM : 16 Gb</li>
    <li>OS : Fedora</li>
-   <li><pre>Docker version 20.10.2, build 2291f61
+   <li><pre>Docker version 20.10.0-rc1, build 5cc2396
 </pre></li>
   </ul>
 </details>
@@ -94,7 +94,9 @@ make -f ${FRAMEWORK}/.Makefile collect
 
 |    | Language | Framework | Speed (64) | Speed (256) | Speed (512) |
 |----|----------|-----------|-----------:|------------:|------------:|
-| 1 | ruby (3.0)| [rails](https://rubyonrails.org) (6.1) | 507.87 | 549.92 | 548.70 |
+| 1 | ruby (3.0)| [rails](https://rubyonrails.org) (6.1) - with _iodine_ | 3 904.04 | 3 873.60 | 3 840.33 |
+| 2 | ruby (3.0)| [rails](https://rubyonrails.org) (6.1) - with _falcon_ | 3 091.22 | 2 992.32 | 2 908.69 |
+| 3 | ruby (3.0)| [rails](https://rubyonrails.org) (6.1) - with _puma_ | 2 774.51 | 2 759.56 | 2 767.71 |
 </a>
 
 </details>
